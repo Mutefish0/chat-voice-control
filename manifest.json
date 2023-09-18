@@ -1,0 +1,28 @@
+{
+  "action": {
+    "default_icon": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Voice Control for ChatGPT"
+  },
+  "content_scripts": [
+    {
+      "all_frames": false,
+      "js": ["index.js"],
+      "matches": ["https://chat.chatgptui.org/*"],
+      "run_at": "document_idle"
+    }
+  ],
+  "description": "Expands ChatGPT with voice control and read aloud.",
+  "icons": {
+    "128": "icon128.png",
+    "16": "icon16.png",
+    "48": "icon48.png"
+  },
+  "manifest_version": 3,
+  "name": "Voice Control for ChatGPT UI",
+  "version": "1.0.0"
+}
